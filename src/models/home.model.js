@@ -21,6 +21,7 @@ const HomeSchema = mongoose.Schema(
     location: String,
     area: String,
     year: Number,
+    type: String,
     price: [PriceSchema],
     is_active: { type: Boolean, default: false },
     is_verified: { type: Boolean, default: false },
