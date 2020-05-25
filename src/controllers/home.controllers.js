@@ -29,6 +29,9 @@ exports.create = (req, res) => {
     year: req.body.year,
     type: req.body.type,
     price: req.body.price,
+    locationRating: req.body.locationRating,
+    priceRating: req.body.priceRating,
+    rating: req.body.rating,
   });
   // Save home in the database
   home
@@ -83,6 +86,9 @@ exports.update = (req, res) => {
       year: req.body.year,
       type: req.body.type,
       price: req.body.price,
+      locationRating: req.body.locationRating,
+      priceRating: req.body.priceRating,
+      rating: req.body.rating,
     },
     { new: true }
   )
