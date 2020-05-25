@@ -20,6 +20,7 @@ const HomeSchema = mongoose.Schema(
     description: String,
     location: String,
     area: String,
+    year: Number,
     price: [PriceSchema],
     is_active: { type: Boolean, default: false },
     is_verified: { type: Boolean, default: false },
