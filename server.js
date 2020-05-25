@@ -34,6 +34,11 @@ const userRoutes = require("./src/routes/user.routes");
 // using as middleware
 app.use("/api/users", userRoutes);
 
+// Require Users routes
+const homeRoutes = require("./src/routes/home.routes");
+// using as middleware
+app.use("/api/homes", homeRoutes);
+
 // listen for requests
 app.listen(port, () => {
   console.log(`Node server is listening on port ${port}`);
